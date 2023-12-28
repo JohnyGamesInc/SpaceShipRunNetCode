@@ -1,7 +1,7 @@
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.Networking;
 #pragma warning disable 618
-using static UnityEngine.Networking.NetworkServer;
 #pragma warning restore 618
 
 namespace Players
@@ -20,7 +20,7 @@ namespace Players
 
         private void SpawnCharacter()
         {
-            if (!isServer)
+            if (!IsServer)
             {
                 return;
             }
